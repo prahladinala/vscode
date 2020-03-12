@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>VS Code Tools</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-header">
+        <a class="navbar-brand" href="#">
+            <img src="images/prahlad_circle.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            &nbsp; VS Code Tools
+        </a>
+    </nav>
+ 
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-xs-12 pl-2">
+                <div class="card bg-dark text-white mx-auto mb-3 card1" id="comp0" style="width: 18rem;">
+                    <img class="card-img-top my-3 img1" src="images/theme.PNG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PR Snippets</h5>
+                        <p class="card-text">This is a VS Code Extension that is designed for a lazy programmers who are not intrested to write html sytax from scratch.</p>
+                        <a href="files/pr-snippets.zip" class="btn btn-warning btn-block"><i class="fa fa-download"
+                            aria-hidden="true"></i>
+                        Download Extension</a>
+                        <button onclick="removeComp0()" class="btn btn-danger btn-block comp0"><i class="fa fa-ban"
+                            aria-hidden="true"></i>
+                        Not interested</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+                <div class="card bg-dark text-white mx-auto mb-3 card2" id="comp1" style="width: 18rem;">
+                    <img class="card-img-top my-3 img2" src="images/theme.PNG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">PR VS Code Theme</h5>
+                        <p class="card-text">This is a VS Code Dark Theme for the late night programmers. This theme helps to view the code vibrant colored.</p>
+                        <a href="files/pr-vs-theme-dark.zip" class="btn btn-warning btn-block"><i class="fa fa-download"
+                            aria-hidden="true"></i>
+                        Download Theme</a>
+                        <button onclick="removeComp1()" class="btn btn-danger btn-block comp1"><i class="fa fa-ban"
+                            aria-hidden="true"></i>
+                        Not interested</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+     <!-- footer section starts -->
+     <div class="container-fluid bottom-footer fixed-bottom">
+        <div class="row">
+            <div class="col-12 bg-dark text-white text-center pt-2">
+                <p>Copyright © 2020 - All rights reserved </p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section ends -->
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous"></script>
+        <script>
+            $(".img1").click(function () {
+                $(".card1").effect("shake");
+            });
+            $(".img2").click(function () {
+                $(".card2").effect("shake");
+            });
+            $(".img3").click(function () {
+                $(".card3").effect("shake");
+            });
+            $(".img4").click(function () {
+                $(".card4").effect("shake");
+            });
+            $(".img5").click(function () {
+                $(".card5").effect("shake");
+            });
+            $(".img6").click(function () {
+                $(".card6").effect("shake");
+            });
+            $(".img7").click(function () {
+                $(".card7").effect("shake");
+            });
+            $(".img8").click(function () {
+                $(".card8").effect("shake");
+            });
+            $(".img9").click(function () {
+                $(".card9").effect("shake");
+            })
+        </script>
+        <!-- JQUERY Code FadeOut Animation -->
+        <script>
+            $(".comp0").click(function () {
+                $("#comp0").fadeOut(2000);
+            });
+            $(".comp1").click(function () {
+                $("#comp1").fadeOut(2000);
+            });
+            $(".comp2").click(function () {
+                $("#comp2").fadeOut(2000);
+            });
+            $(".comp3").click(function () {
+                $("#comp3").fadeOut(2000);
+            });
+            $(".comp4").click(function () {
+                $("#comp4").fadeOut(2000);
+            });
+            $(".comp5").click(function () {
+                $("#comp5").fadeOut(2000);
+            });
+            $(".comp6").click(function () {
+                $("#comp6").fadeOut(2000);
+            });
+            $(".comp7").click(function () {
+                $("#comp7").fadeOut(2000);
+            });
+            $(".comp8").click(function () {
+                $("#comp8").fadeOut(2000);
+            });
+        </script>
+        <script>
+            $(window).on("load",function(){
+                $(".loader-wrapper").fadeOut("slow")
+            });
+        </script>
+</body>
+
+</html>
